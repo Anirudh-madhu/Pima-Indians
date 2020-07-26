@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="Model_API">
+  <h1><center>Diabetic Prediction</center></h1>
+
+ 
+
+  <form action="{{url_for('predict')}}"method="POST">
+             
+    <center><input type="Pregnancies" name="Pregnancies" placeholder="Pregnancies" required="required" /></br></center>
+    <center><input type="Glucose" name="Glucose" placeholder="Glucose" required="required" /></br></center>
+    <center><input type="BloodPressure" name="BloodPressure" placeholder="BloodPressure" required="required" /></br></center>
+	<center><input type="SkinThickness" name="SkinThickness" placeholder="SkinThickness" required="required" /></br></center>
+	<center><input type="Insulin" name="Insulin" placeholder="Insulin" required="required" /></br></center>
+	<center><input type="BMI" name="BMI" placeholder="BMI" required="required" /></br></center>
+	<center><input type="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /></br></center>
+	<center><input type="Age" name="Age" placeholder="Age" required="required" /></br></center>
+    
+ 
+
+    <br><center><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></center>
+  </form>
+
+ 
+
+  <br>
+  <br>
+  {{ prediction_text }}
+
+ 
+
+  </div>
+
+ 
+
+</body>
+</html>
